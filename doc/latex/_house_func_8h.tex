@@ -1,0 +1,66 @@
+\hypertarget{_house_func_8h}{}\section{House\+Func.\+h File Reference}
+\label{_house_func_8h}\index{House\+Func.\+h@{House\+Func.\+h}}
+{\ttfamily \#include \char`\"{}House\+Price.\+h\char`\"{}}\newline
+Include dependency graph for House\+Func.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_house_func_8h_a8ed79457fa6e38860fadb3e4335f3ef2}{read\+C\+SV} (const string file\+In, vector$<$ \hyperlink{class_house_price}{House\+Price} $>$ \&hp)
+\item 
+void \hyperlink{_house_func_8h_a54a9a75d44717adc1999ad71ec7d96be}{house\+Market\+Values} (vector$<$ \hyperlink{class_house_price}{House\+Price} $>$ \&hp)
+\item 
+void \hyperlink{_house_func_8h_adb2acd20b1456c56df0da3fca802bd42}{house\+Market\+Per\+State} (vector$<$ \hyperlink{class_house_price}{House\+Price} $>$ \&hp)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_house_func_8h_adb2acd20b1456c56df0da3fca802bd42}\label{_house_func_8h_adb2acd20b1456c56df0da3fca802bd42}} 
+\index{House\+Func.\+h@{House\+Func.\+h}!house\+Market\+Per\+State@{house\+Market\+Per\+State}}
+\index{house\+Market\+Per\+State@{house\+Market\+Per\+State}!House\+Func.\+h@{House\+Func.\+h}}
+\subsubsection{\texorpdfstring{house\+Market\+Per\+State()}{houseMarketPerState()}}
+{\footnotesize\ttfamily void house\+Market\+Per\+State (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{class_house_price}{House\+Price} $>$ \&}]{hp }\end{DoxyParamCaption})}
+
+Sort the Vector of \hyperlink{class_house_price}{House\+Price} Objects by state. Display the number of houses per state. It uses a map to count instances per state. 
+\begin{DoxyParams}{Parameters}
+{\em hp} & Reference to vector$<$\+House\+Price$>$ \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{_house_func_8h_a54a9a75d44717adc1999ad71ec7d96be}\label{_house_func_8h_a54a9a75d44717adc1999ad71ec7d96be}} 
+\index{House\+Func.\+h@{House\+Func.\+h}!house\+Market\+Values@{house\+Market\+Values}}
+\index{house\+Market\+Values@{house\+Market\+Values}!House\+Func.\+h@{House\+Func.\+h}}
+\subsubsection{\texorpdfstring{house\+Market\+Values()}{houseMarketValues()}}
+{\footnotesize\ttfamily void house\+Market\+Values (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{class_house_price}{House\+Price} $>$ \&}]{hp }\end{DoxyParamCaption})}
+
+Sort the Vector of \hyperlink{class_house_price}{House\+Price} Objects by price. Display the most affordable and the most expensive house from the vector. 
+\begin{DoxyParams}{Parameters}
+{\em hp} & Reference to vector$<$\+House\+Price$>$ \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{_house_func_8h_a8ed79457fa6e38860fadb3e4335f3ef2}\label{_house_func_8h_a8ed79457fa6e38860fadb3e4335f3ef2}} 
+\index{House\+Func.\+h@{House\+Func.\+h}!read\+C\+SV@{read\+C\+SV}}
+\index{read\+C\+SV@{read\+C\+SV}!House\+Func.\+h@{House\+Func.\+h}}
+\subsubsection{\texorpdfstring{read\+C\+S\+V()}{readCSV()}}
+{\footnotesize\ttfamily void read\+C\+SV (\begin{DoxyParamCaption}\item[{const string}]{file\+In,  }\item[{vector$<$ \hyperlink{class_house_price}{House\+Price} $>$ \&}]{hp }\end{DoxyParamCaption})}
+
+Read C\+SV Mock Data. Parses each record in the file to an object of \hyperlink{class_house_price}{House\+Price} house. Then, populate a vector of \hyperlink{class_house_price}{House\+Price} objects with all the records. It uses special library to parse C\+SV file \char`\"{}csv.\+h\char`\"{} 
+\begin{DoxyParams}{Parameters}
+{\em file\+In} & File name $<$string$>$ \\
+\hline
+{\em hp} & Reference to Vector of \hyperlink{class_house_price}{House\+Price} Objects \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7
